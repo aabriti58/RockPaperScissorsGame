@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RockPaperScissorsGame.MainPage"
+             Title="" 
+             >
+
+    <Grid RowDefinitions="Auto,*"
+          BackgroundColor="LightCyan" HeightRequest="700" WidthRequest="400" >
+
+        <Label Grid.Row="0" Text="Rock Paper Scissors"
+               FontSize="30" TextColor="CornflowerBlue" 
+               HorizontalOptions="Center" VerticalOptions="Start"
+               Margin="0,100,0,0"/>
+
+        <StackLayout Grid.Row="1" Spacing="20" 
+                     VerticalOptions="CenterAndExpand"
+                       Margin="0,0,0,200">
+            <Button Text="New Game" Clicked="NewGameButton_Clicked"
+                    FontSize="20" BackgroundColor="CornflowerBlue"
+                    Padding="20,20" WidthRequest="150"/>
+            <Button Text="Statistics" Clicked="StatisticsButton_Clicked"
+                    FontSize="20" BackgroundColor="CornflowerBlue"
+                    Padding="20,20" WidthRequest="150"/>
+            <Button Text="Exit" Clicked="ExitButton_Clicked"
+                    FontSize="20" BackgroundColor="CornflowerBlue"
+                    Padding="20,20" WidthRequest="150"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
